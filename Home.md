@@ -1,42 +1,59 @@
-# Welcome
+<link href="http://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
+<link rel="stylesheet" href="http://bitbucket.org/mesketh/wiki/tablestyle.css"/>
 
-Welcome to your wiki! This is the default page we've installed for your convenience. Go ahead and edit it.
+# Welcome to TestSw33t
 
-## Wiki features
+## Problem Space
+_Ever written web or http/REST services and then unit tested them via SOAPUI only to have to constantly tweak when switching your tests to another hosting environment?_ _Having to change messages and endpoint urls just to check out whether a service is functional and performant or not?_ _It's tedious and error prone but, you wonder what kind of effort you would have to go to JUST to run these things automagically alongside your Jenkins CI build?_
 
-This wiki uses the [Markdown](http://daringfireball.net/projects/markdown/) syntax.
+## Solution Space
 
-The wiki itself is actually a mercurial repository, which means you can clone it, edit it locally/offline, add images or any other file type, and push it back to us. It will be live immediately.
+TestSw33t is a java-based tool that performs the following tasks:
+ 
+*	Runs your existing SOAPUI test suites in a headless mode (using the native _testrunner.bat_ bundled with SOAPUI)
+*	Performs property expansion within SOAP messages via the convention of configuring a file named _TestSuiteName_.properties.
+*	Allows common properties to be shared and specified _once_ for all Test Suites via the bundled _runner.properties_
+*	Aggregates all test suite results and generates a single html report powered by jQuery UI suitable for publishing to a wiki or CI Jenkins build.
 
-Go ahead and try:
+### Feature Matrix
 
-```
-$ hg clone https://mesketh@bitbucket.org/mesketh/soapui-testsuiterunner/wiki
-```
+<div class="CSSTableGenerator" >
+ <table>
+<tr><th>Feature</th></tr>
+                    <tr>
+                        <td>
+                            Title 1
+                        </td>
+                        <td >
+                            Title 2
+                        </td>
+                        <td>
+                            Title 3
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            Row 1
+                        </td>
+                        <td>
+                            Row 1
+                        </td>
+                        <td>
+                            Row 1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            Row 2
+                        </td>
+                        <td>
+                            Row 2
+                        </td>
+                        <td>
+                            Row 2
+                        </td>
+                    </tr>
+                </table>
+      </div>
+            
 
-Wiki pages are normal files, with the .md extension. You can edit them locally, as well as creating new ones.
-
-## Syntax highlighting
-
-
-You can also highlight snippets of text (we use the excellent [Pygments][] library).
-
-[Pygments]: http://www.pygments.org/
-
-
-Here's an example of some Python code:
-
-```
-#!python
-
-def wiki_rocks(text):
-    formatter = lambda t: "funky"+t
-    return formatter(text)
-```
-
-
-You can check out the source of this page to see how that's done, and make sure to bookmark [the vast library of Pygment lexers][lexers], we accept the 'short name' or the 'mimetype' of anything in there.
-[lexers]: http://pygments.org/docs/lexers/
-
-
-Have fun!
