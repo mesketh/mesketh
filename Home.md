@@ -1,6 +1,5 @@
 
 
-
 # Welcome to TestSw33t
 
 ## Problem Space
@@ -18,7 +17,7 @@ TestSw33t is a java-based tool that performs the following tasks:
 ## Progress 
 Not all of the features mentioned about are implemented. Please see the [Feature Matrix](http://bitbucket.org/mesketh/testsw33t/wiki/feature-matrix.html) for an up to the minute report.
 
--- 
+---
 
 ## Installation and Configuration
 Use Mercurial to clone the project to your machine: 
