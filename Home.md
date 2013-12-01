@@ -15,3 +15,22 @@ TestSw33t is a java-based tool that performs the following tasks:
 
 ## Progress 
 Not all of the features mentioned about are implemented. Please see the [Feature Matrix](http://bitbucket.org/mesketh/testsw33t/wiki/feature-matrix.html) for an up to the minute report.
+
+-- 
+
+## Installation and Configuration
+Use Mercurial to clone the project to your machine: <p><code>hg clone https://bitbucket.org/mesketh/testsw33t</code></p>
+
+Now configure the following in your <code>src/main/resources/runner.properties</code>:
+
+   - <code>soapui.testrunner.path</code>: to point to your SOAPUI installation. Note: this should include the bin directory to allow SOAPUI to be executed through it's headless batch file (required).
+   - <code>soapui.report.dir</code> - this is the the directory into which you would like your final html report generated (optional).
+   - <code>soapui.project</code> - this is the full path to your SOAPUI project holding your test suites to run and report on (required).
+
+## Getting Started
+
+To begin using _TestSw33t_ it's recommended you follow these guidelines: 
+
+   - Author your SOAPUI test cases and organise them into top level Test Suites preferably 1:1 suites per environment-under-test so for say E1 you would have a suite full of test cases evaluating E1 hosted services that your application is reliant upon.
+   - Matching your test suite names are any <code>.properties</code> files that your test cases use environment-sensitive property expansion for for example, in the <code>samples/</code> there is a soap ui project containing two test suites each with their own associated properties files for properties pertaining to specific test cases where these properties are expanded prior to running. 
+   - Any default properties can be included in the default <code>runner.properties</code>.
