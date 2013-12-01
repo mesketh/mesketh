@@ -3,7 +3,7 @@
 ## Problem Space
 _Ever written web or http/REST services and then unit tested them via SOAPUI only to have to constantly tweak when switching your tests to another hosting environment?_ _Having to change messages and endpoint urls just to check out whether a service is functional and performant or not?_ _Wondering why a feature you tested 10mins earlier is now being reported as b0rked by a tester or worse your end user?_
 
-## Solution Space
+## Solution
 
 TestSw33t is a java-based tool that performs the following tasks:
  
