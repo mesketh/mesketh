@@ -19,13 +19,13 @@ Not all of the features mentioned about are implemented. Please see the [Feature
 -- 
 
 ## Installation and Configuration
-Use Mercurial to clone the project to your machine: <p><code>hg clone https://bitbucket.org/mesketh/testsw33t</code></p>
+Use Mercurial to clone the project to your machine: <pre>hg clone https://bitbucket.org/mesketh/testsw33t</pre>
 
 Now configure the following in your <code>src/main/resources/runner.properties</code>:
 
-   - <code>soapui.testrunner.path</code>: to point to your SOAPUI installation. Note: this should include the bin directory to allow SOAPUI to be executed through it's headless batch file (required).
-   - <code>soapui.report.dir</code> - this is the the directory into which you would like your final html report generated (optional).
-   - <code>soapui.project</code> - this is the full path to your SOAPUI project holding your test suites to run and report on (required).
+   - <pre><code>soapui.testrunner.path</code></pre> to point to your SOAPUI installation. Note: this should include the bin directory to allow SOAPUI to be executed through it's headless batch file (required).
+   -  <pre><code>soapui.report.dir</code></pre> - this is the the directory into which you would like your final html report generated (optional).
+   -  <pre><code>soapui.project</code></pre> - this is the full path to your SOAPUI project holding your test suites to run and report on (required).
 
 ## Getting Started
 
