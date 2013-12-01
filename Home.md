@@ -1,4 +1,6 @@
 
+
+
 # Welcome to TestSw33t
 
 ## Problem Space
@@ -8,9 +10,9 @@ _Ever written web or http/REST services and then unit tested them via SOAPUI onl
 
 TestSw33t is a java-based tool that performs the following tasks:
  
-*	Runs your existing SOAPUI test suites in a headless mode (using the native _testrunner.bat_ bundled with SOAPUI)
+*	Runs your existing SOAPUI test suites in a headless mode (using the native ```testrunner.bat``` bundled with SOAPUI)
 *	Performs property expansion within SOAP messages via the convention of configuring a file named _TestSuiteName_.properties.
-*	Allows common properties to be shared and specified _once_ for all Test Suites via the bundled _runner.properties_
+*	Allows common properties to be shared and specified _once_ for all Test Suites via the bundled ```runner.properties```
 *	Aggregates all test suite results and generates a single html report powered by jQuery UI suitable for publishing to a wiki or CI Jenkins build.
 
 ## Progress 
@@ -21,13 +23,13 @@ Not all of the features mentioned about are implemented. Please see the [Feature
 ## Installation and Configuration
 Use Mercurial to clone the project to your machine: 
 
-<pre>hg clone https://bitbucket.org/mesketh/testsw33t</pre>
+```hg clone https://bitbucket.org/mesketh/testsw33t```
 
 Now configure the following in your _src/main/resources/runner.properties_
 
-   - <pre><code>soapui.testrunner.path</code></pre> to point to your SOAPUI installation. Note: this should include the bin directory to allow SOAPUI to be executed through it's headless batch file (required).
-   -  <pre><code>soapui.report.dir</code></pre> - this is the the directory into which you would like your final html report generated (optional).
-   -  <pre><code>soapui.project</code></pre> - this is the full path to your SOAPUI project holding your test suites to run and report on (required).
+   - ```soapui.testrunner.path``` to point to your SOAPUI installation. Note: this should include the bin directory to allow SOAPUI to be executed through it's headless batch file (required).
+   -  ```soapui.report.dir``` - this is the the directory into which you would like your final html report generated (optional).
+   -  ```soapui.project``` - this is the full path to your SOAPUI project holding your test suites to run and report on (required).
 
 ## Getting Started
 
@@ -35,4 +37,5 @@ To begin using _TestSw33t_ it's recommended you follow these guidelines:
 
    - Author your SOAPUI test cases and organise them into top level Test Suites preferably 1:1 suites per environment-under-test so for say E1 you would have a suite full of test cases evaluating E1 hosted services that your application is reliant upon. On you go for other environments.
    - Matching your test suite names are any _.properties_ files that your test cases use environment-sensitive property expansion for example, in the _samples/_ there is a soap ui project containing two test suites each with their own associated properties files for properties pertaining to specific test cases where these properties are expanded prior to running. 
-   - Any default properties can be included in the default _runner.properties_.
+   - Any default properties can be included in the default ```runner.properties```.
+
