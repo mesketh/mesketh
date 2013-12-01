@@ -19,7 +19,7 @@ Not all of the features mentioned about are implemented. Please see the [Feature
 -- 
 
 ## Installation and Configuration
-Use Mercurial to clone the project to your machine: <pre><code>hg clone https://bitbucket.org/mesketh/testsw33t</code></pre>
+Use Mercurial to clone the project to your machine: <pre>hg clone https://bitbucket.org/mesketh/testsw33t</pre>
 
 Now configure the following in your _src/main/resources/runner.properties_
 
