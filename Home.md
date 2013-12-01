@@ -26,7 +26,7 @@ Now configure the following in your _src/main/resources/runner.properties_
 
    - ```soapui.testrunner.path``` to point to your SOAPUI installation. Note: this should include the bin directory to allow SOAPUI to be executed through it's headless batch file (required).
    -  ```soapui.report.dir``` - this is the the directory into which you would like your final html report generated (required).
-   -  ```soapui.project``` - this is the full path to your SOAPUI project holding your test suites to run and report on (required).
+   -  ```soapui.project.file``` - this is the full path to your SOAPUI project holding your test suites to run and report on (required).
 
 ## Getting Started
 
@@ -35,10 +35,3 @@ To begin using _TestSw33t_ it's recommended you follow these guidelines:
    - Author your SOAPUI test cases and organise them into top level Test Suites preferably 1:1 suites per environment-under-test so for say E1 you would have a suite full of test cases evaluating E1 hosted services that your application is reliant upon and so on for higher/other environments.
    - Matching your test suite names are any _.properties_ files that your test cases use for performing environment-sensitive property expansion for example, in the _samples/_ there is a soap ui project containing two test suites each with their own associated properties files (```GWTestSuite.properties``` & ```CCTestSuite.properties```) for properties pertaining to specific test cases where these properties are expanded prior to running. 
    - Any reusable and/or default properties can be included in the default ```runner.properties```.
-
-
-
-```
-#!java
-
-import java.
