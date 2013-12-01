@@ -1,5 +1,4 @@
 
-
 # Welcome to TestSw33t
 
 ## Problem Space
@@ -27,7 +26,7 @@ Use Mercurial to clone the project to your machine:
 Now configure the following in your _src/main/resources/runner.properties_
 
    - ```soapui.testrunner.path``` to point to your SOAPUI installation. Note: this should include the bin directory to allow SOAPUI to be executed through it's headless batch file (required).
-   -  ```soapui.report.dir``` - this is the the directory into which you would like your final html report generated (optional).
+   -  ```soapui.report.dir``` - this is the the directory into which you would like your final html report generated (required).
    -  ```soapui.project``` - this is the full path to your SOAPUI project holding your test suites to run and report on (required).
 
 ## Getting Started
