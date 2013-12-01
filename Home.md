@@ -21,7 +21,7 @@ Not all of the features mentioned about are implemented. Please see the [Feature
 ## Installation and Configuration
 Use Mercurial to clone the project to your machine: <pre>hg clone https://bitbucket.org/mesketh/testsw33t</pre>
 
-Now configure the following in your <pre><code>src/main/resources/runner.properties</code>:</pre>
+Now configure the following in your _src/main/resources/runner.properties_
 
    - <pre><code>soapui.testrunner.path</code></pre> to point to your SOAPUI installation. Note: this should include the bin directory to allow SOAPUI to be executed through it's headless batch file (required).
    -  <pre><code>soapui.report.dir</code></pre> - this is the the directory into which you would like your final html report generated (optional).
@@ -34,3 +34,4 @@ To begin using _TestSw33t_ it's recommended you follow these guidelines:
    - Author your SOAPUI test cases and organise them into top level Test Suites preferably 1:1 suites per environment-under-test so for say E1 you would have a suite full of test cases evaluating E1 hosted services that your application is reliant upon.
    - Matching your test suite names are any _.properties_ files that your test cases use environment-sensitive property expansion for for example, in the _samples/_ there is a soap ui project containing two test suites each with their own associated properties files for properties pertaining to specific test cases where these properties are expanded prior to running. 
    - Any default properties can be included in the default _runner.properties_.
+_
