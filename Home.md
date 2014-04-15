@@ -13,7 +13,7 @@ TestSw33t is a java-based tool that performs the following tasks:
 *	Aggregates all test suite results and generates a single html report powered by jQuery UI suitable for publishing to a wiki or CI Jenkins build.
 
 ## Progress 
-Not all of the features mentioned about are implemented. Please see the [Feature Matrix](https://bitbucket.org/mesketh/testsw33t/wiki/feature-matrix.html) for an up to the minute report.
+Not all of the features mentioned about are implemented. Please see the [Feature Matrix](./feature-matrix.html) for an up to the minute report.
 
 ---
 
